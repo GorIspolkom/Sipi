@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="{% static 'css/ald.css' %}" type="text/css">
+  </head>
+  <body>
+      <div class="auth-top"><h2>ALR PRO 1.4.8.8</h2></div>
+      <div class="auth">
+      <h2>Авторизация</h2>
+      <form method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
+        <!--<ul>
+          <li><input type="text" id = "login" placeholder="Введите логин"></li>
+          <li><input type="password" id="password" placeholder="Введите пароль"></li>
+      </ul>-->
+      </form>
+      <button type="submit">Login</button>
+    </div>
+    <div class="sign">
+      <p>Made by BaldHedgehog Group, 2023.</p>
+    </div>
+  </body>
+</html>

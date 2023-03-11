@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All policy</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>All devices</h2>
+    {% for plate in plates %}
+    <h2>{{ plate.hostname }}</h2>
+    {% endfor %}
+</body>
+</html>

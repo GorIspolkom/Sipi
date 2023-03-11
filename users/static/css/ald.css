@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Mukta:wght@300&family=Mynerve&display=swap');
+* {
+  box-sizing: border-box
+}
+
+li{
+  list-style-type: none;
+}
+
+ul{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+h2{
+  color: #c1c1c1;
+  font-size: 36px;
+}
+
+body{
+  background-color: #212121;
+}
+
+#login, #password{
+  font-size: 20px;
+  width: 30%;
+  height: 5vh;
+  border-radius: 10px;
+}
+
+#name{
+  color: #fafafa;
+  border-width: 5px;
+  border-color: red;
+  padding:15px;
+  margin-bottom: 2px;
+}
+
+.button1{
+  font-size: 20px;
+  width: 30%;
+  height: 5vh;
+  border-radius: 10px;
+}
+
+.button1:hover{
+  font-size: 20px;
+  width: 30%;
+  height: 5vh;
+  border-radius: 10px;
+  background-image: url("..static/media/button.png");
+  cursor: pointer;
+}
+
+.sidebar{
+  position:relative;
+  padding-bottom:50px;
+  padding: 0;
+  margin-top: 0px;
+  width: 15%;
+  height:100%;
+  background: #616161;
+  font-size: 36px;
+  text-align: center;
+  line-height: 50px;
+}
+
+.menu{
+
+  left:0;
+}
+.menu a{
+  font-family: 'Mukta', sans-serif;
+  display: block;
+  color: #424242;
+  text-decoration: none;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  background: #757575;
+}
+
+.menu a:hover {
+  color: #eb1c09;
+}
+
+.sign{
+  font-size: 15px;
+  padding: 15px 15px;
+  position: absolute;
+  color: #fafafa;
+  float: left;
+  bottom: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.sign p{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.auth-top
+{
+  background-color: #424242;
+  text-align: center;
+  border: 2px solid #424242;
+}
+
+.auth{
+  text-align: center;
+  padding-bottom: 5;
+}
