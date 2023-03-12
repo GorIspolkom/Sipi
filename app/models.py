@@ -11,14 +11,14 @@ def get_all_policy():
 
 
 class Plate(models.Model):
-    ip_address = models.GenericIPAddressField()
-    hostname = models.CharField(max_length=45)
+    ip_address = models.GenericIPAddressField(unique=True)
+    hostname = models.CharField(max_length=45, unique=True)
     is_active = models.BooleanField(default=False)
     user = models.CharField(max_length=20, default='root')
     password = models.CharField(max_length=45, default='!QAZxsw2')
 
     def __str__(self):
-        return self.hostname
+        return self.hostname.__str__() + ' ' + self.ip_address.__str__()
 
     pass
 

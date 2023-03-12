@@ -10,15 +10,15 @@
       <div class="auth-top"><h2>ALR PRO 1.4.8.8</h2></div>
       <div class="auth">
       <h2>Авторизация</h2>
-      <form method="post">
+      <form method="post" action="">
           {% csrf_token %}
           {{ form.as_p }}
         <!--<ul>
           <li><input type="text" id = "login" placeholder="Введите логин"></li>
           <li><input type="password" id="password" placeholder="Введите пароль"></li>
       </ul>-->
+                <button type="submit">Add</button>
       </form>
-      <button type="submit">Login</button>
     </div>
     <div class="sign">
       <p>Made by BaldHedgehog Group, 2023.</p>
